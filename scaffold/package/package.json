@@ -1,0 +1,20 @@
+{
+  "name": "<%= npmScopeStr %><%= pkgName %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "main": "./src/index.wpy",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meili/minui/tree/master/packages/<%= pkgName %>"
+  },
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {},
+  "minConfig": {
+    "component": true
+  }
+}

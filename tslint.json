@@ -1,0 +1,7 @@
+{
+  "extends": "tslint-config-standard",
+  "rules": {
+    "indent": ["error", 4],
+    "no-eval": false
+  }
+}

@@ -1,0 +1,20 @@
+<template>
+  <<%= pkgNameToPascalCase %>></<%= pkgNameToPascalCase %>>
+</template>
+
+<script>
+import wepy from 'wepy'
+import <%= pkgNameToPascalCase %> from 'packages/<%= pkgName %>/index'
+export default class DemoDefault extends wepy.component {
+  config = {
+    navigationBarTitleText: '<%= pkgName %>'
+  }
+  components = {
+    <%= pkgNameToPascalCase %>
+  }
+  data = {}
+  methods = {}
+}
+</script>
+<style lang="less">
+</style>

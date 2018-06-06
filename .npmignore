@@ -1,0 +1,10 @@
+/config
+/src
+/types
+/example
+node_modules
+tsconfig.json
+tslint.json
+.editorconfig
+*.log
+.git

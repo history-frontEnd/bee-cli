@@ -1,0 +1,20 @@
+<template>
+  <view class="<%= pkgName %>">
+    <view><%= pkgNameToPascalCase %> Component</view>
+  </view>
+
+</template>
+
+<script>
+import wepy from 'wepy'
+export default class Index extends wepy.component {
+  data = {}
+  events = {}
+  methods = {}
+  onLoad() {}
+}
+</script>
+<style lang="less">
+.<%= pkgName %> {
+}
+</style>

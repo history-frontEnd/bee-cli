@@ -1,0 +1,17 @@
+<template>
+  <view><%= pageNameToPascalCase %> Page</view>
+</template>
+
+<script>
+import wepy from 'wepy'
+export default class Index extends wepy.component {
+  config = {
+    navigationBarTitleText: '<%= pageNameToPascalCase %>'
+  }
+  data = {}
+  methods = {}
+}
+</script>
+<style lang="less">
+</style>
+

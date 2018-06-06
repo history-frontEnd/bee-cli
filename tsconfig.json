@@ -1,0 +1,15 @@
+{
+  "extends": "./config/tsbase.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    "typeRoots": [
+      "./types/*.d.ts"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ]
+}
