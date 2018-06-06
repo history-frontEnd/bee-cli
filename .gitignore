@@ -6,3 +6,4 @@ package-lock.json
 .vscode/
 *.log
 .DS_Store
+log/*
