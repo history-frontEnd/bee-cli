@@ -10,20 +10,52 @@ $ npm install -g @b1/bee-cli
 
 ### ◆ wepy小程序框架模板
 ``` bash
-bee-cli init # 选择新建小程序
+bee init # 选择新建小程序
+#? 请设置项目目录 /Users/qiu/biosan/testMin/test
+#? 请选择项目类型 新建小程序
+#? 是否继续高级设置 Yes
+#? 请设置项目标题 Test
+#? 请设置小程序AppId touristappid
+#? 请设置项目描述 Test-小程序
+#? 是否使用全局变量 Yes
+#? 请设置GIT仓库地址 git;//example.git
+#? 请设置Author ex
 ```
+> 微信开发者工具-->项目-->关闭ES6转ES5。重要：漏掉此项会运行报错。
+微信开发者工具-->项目-->关闭上传代码时样式自动补全 重要：某些情况下漏掉此项会也会运行报错。
+微信开发者工具-->项目-->关闭代码压缩上传
+
 
 ### ◆ wepy小程序Ui组件库模板
 ``` bash
-bee-cli init # 选择新建组件库
+bee init # 选择新建组件库
+# example
+#? 请设置项目目录 ~/test
+#? 请选择项目类型 新建组件库
+#? 是否继续高级设置 Yes
+#? 请设置项目标题 Test
+#? 请设置小程序AppId touristappid
+#? 请设置项目描述 Test-组件库
+#? 请设置组件名前缀 test
+#? 是否使用全局变量 Yes
+#? 请设置NPM模块的scope名称 @b1
+#? 请设置GIT仓库地址 github://example.git
+#? 请设置Author ex
 ```
+> 微信开发者工具-->项目-->关闭ES6转ES5。重要：漏掉此项会运行报错。
+微信开发者工具-->项目-->关闭上传代码时样式自动补全 重要：某些情况下漏掉此项会也会运行报错。
+微信开发者工具-->项目-->关闭代码压缩上传
 
 ### ◆ 在Ui组件库中开发组件
 
 - **新建组件**
 
 ``` bash
-$ bee-cli new *name
+$ bee new *name
+
+#? 请选择新建类型 新建组件
+#? 请设置新组件的英文名称 test-xx
+#? 请设置新组件的中文标题 xx
 ```
 
 1. 该命令会在src/packages生成组件的npm库，同时生成指定模板的样例页面
@@ -39,7 +71,7 @@ $ npm run dev
 - **发布组件**
 
 ``` bash
-$ bee-cli publish
+$ bee publish
 ```
 
 1. 如果检测不到你的组件更新，使用git add 把新组件加入到索引中
