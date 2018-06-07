@@ -8,7 +8,7 @@ Bee Cli是[min-cli](https://github.com/meili/min-cli)在[wepy](https://github.co
 $ npm install -g @b1/bee-cli
 ```
 
-### ◆ wepy小程序框架模板
+### ◆ wepy小程序框架模板 [BeeWepy](https://github.com/biosan-frontEnd/BeeWepy)
 ``` bash
 bee init # 选择新建小程序
 # example
@@ -22,12 +22,12 @@ bee init # 选择新建小程序
 #? 请设置GIT仓库地址 git://example.git
 #? 请设置Author ex
 ```
-- 运行报错
+- 微信开发者工具 —— 目录指向生成的 dist/, 运行报错:
 1. 微信开发者工具-->项目-->关闭ES6转ES5。
 2. 微信开发者工具-->项目-->关闭上传代码时样式自动补全。
 3. 微信开发者工具-->项目-->关闭代码压缩上传
 
-### ◆ wepy小程序Ui组件库模板
+### ◆ wepy小程序Ui组件库模板 [BeeUi](https://github.com/biosan-frontEnd/BeeUi)
 ``` bash
 bee init # 选择新建组件库
 # example
@@ -43,7 +43,7 @@ bee init # 选择新建组件库
 #? 请设置GIT仓库地址 github://example.git
 #? 请设置Author ex
 ```
-- 运行报错
+- 微信开发者工具 —— 目录指向生成的 dist/, 运行报错:
 1. 微信开发者工具-->项目-->关闭ES6转ES5。
 2. 微信开发者工具-->项目-->关闭上传代码时样式自动补全。
 3. 微信开发者工具-->项目-->关闭代码压缩上传
