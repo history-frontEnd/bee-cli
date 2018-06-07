@@ -1,10 +1,10 @@
-[![NPM Download](https://nodei.co/npm-dl/@b1/bee-cli.png?months=1)](http://badge.fury.io/js/@b1/bee-ui)
+[![NPM Download](https://nodei.co/npm-dl/@b1/bee-cli.png?months=1)](http://badge.fury.io/js/@b1/bee-cli)
 
-[![NPM Version](https://img.shields.io/npm/v/@b1/bee-cli.svg)](http://badge.fury.io/js/@b1/bee-ui)
+[![NPM Version](https://img.shields.io/npm/v/@b1/bee-cli.svg)](http://badge.fury.io/js/@b1/bee-cli)
 
-[![NPM Version](http://img.shields.io/npm/dm/i-ui.svg?style=flat-square)](http://badge.fury.io/js/i-ui)
+[![NPM Version](http://img.shields.io/npm/dm/@b1/bee-cli.svg?style=flat-square)](http://badge.fury.io/js/@b1/bee-cli)
 
-[![Software License](//img.shields.io/badge/license-MIT-brightgreen.svg)]
+[![Software License](http://img.shields.io/badge/license-MIT-brightgreen.svg)]
 
 # Bee Cli - wepy小程序组件化解决方案
 
