@@ -8,7 +8,7 @@ Bee Cli是[min-cli](https://github.com/meili/min-cli)在[wepy](https://github.co
 $ npm install -g @b1/bee-cli
 ```
 
-### ◆ wepy小程序框架框架模板
+### ◆ wepy小程序框架模板
 ``` bash
 bee-cli init # 选择新建小程序
 ```
