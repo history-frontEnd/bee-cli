@@ -1,3 +1,11 @@
+[![NPM Download](https://nodei.co/npm-dl/@b1/bee-cli.png?months=1)](http://badge.fury.io/js/@b1/bee-ui)
+
+[![NPM Version](https://img.shields.io/npm/v/@b1/bee-cli.svg)](http://badge.fury.io/js/@b1/bee-ui)
+
+[![NPM Version](http://img.shields.io/npm/dm/i-ui.svg?style=flat-square)](http://badge.fury.io/js/i-ui)
+
+[![Software License](//img.shields.io/badge/license-MIT-brightgreen.svg)]
+
 # Bee Cli - wepy小程序组件化解决方案
 
 Bee Cli是[min-cli](https://github.com/meili/min-cli)在[wepy](https://github.com/Tencent/wepy)上的实现。
