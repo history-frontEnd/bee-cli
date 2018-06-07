@@ -1,7 +1,7 @@
 [![NPM Download](https://nodei.co/npm-dl/@b1/bee-cli.png?months=1)](http://badge.fury.io/js/@b1/bee-cli)
 
-<p align="center">
-  <a href="https://npmcharts.com/compare/bee-cli?minimal=true"><img src="https://img.shields.io/npm/dm/bee-cli.svg" alt="Downloads"></a>
+<p align="left">
+  <a href="https://npmcharts.com/compare/@b1/bee-cli?minimal=true"><img src="https://img.shields.io/npm/dm/@b1/bee-cli.svg" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/@b1/bee-cli"><img src="https://img.shields.io/npm/v/@b1/bee-cli.svg" alt="Version"></a>
   <a href="https://www.npmjs.com/package/@b1/bee-cli"><img src="https://img.shields.io/npm/l/@b1/bee-cli.svg" alt="License"></a>
   <br>
