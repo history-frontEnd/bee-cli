@@ -1,11 +1,11 @@
 {
   "name": "@b1/bee-cli",
-  "version": "1.0.0",
-  "description": "wepy小程序组件化开发环境，提供 cli 支持",
+  "version": "1.0.2",
+  "description": "wepy小程序组件化开发环境，提供cli支持",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "http://172.16.0.98/FD/bee-cli"
+    "url": "https://github.com/biosan-frontEnd/bee-cli"
   },
   "scripts": {
     "build": "rm -rf ./lib/* && ./node_modules/.bin/tsc",
@@ -15,7 +15,7 @@
   "bin": {
     "bee": "lib/bin/bee.js"
   },
-  "keywords": [],
+  "keywords": ["wepy", "min-cli", "ui-components"],
   "author": "bee cli",
   "license": "MIT",
   "publishConfig": {
