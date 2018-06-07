@@ -11,14 +11,15 @@ $ npm install -g @b1/bee-cli
 ### ◆ wepy小程序框架模板
 ``` bash
 bee init # 选择新建小程序
-#? 请设置项目目录 /Users/qiu/biosan/testMin/test
+# example
+#? 请设置项目目录 ~/test
 #? 请选择项目类型 新建小程序
 #? 是否继续高级设置 Yes
 #? 请设置项目标题 Test
 #? 请设置小程序AppId touristappid
 #? 请设置项目描述 Test-小程序
 #? 是否使用全局变量 Yes
-#? 请设置GIT仓库地址 git;//example.git
+#? 请设置GIT仓库地址 git://example.git
 #? 请设置Author ex
 ```
 > 微信开发者工具-->项目-->关闭ES6转ES5。重要：漏掉此项会运行报错。
