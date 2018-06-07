@@ -7,9 +7,9 @@
 ![Software License](http://img.shields.io/badge/license-MIT-brightgreen.svg)
 
 <p align="center">
-  <a href="https://npmcharts.com/compare/@b1/bee-cli?minimal=true"><img src="https://img.shields.io/npm/dm/@b1/bee-cli.svg" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/@b1/bee-cli"><img src="https://img.shields.io/npm/v/@b1/bee-cli.svg" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/@b1/bee-cli"><img src="https://img.shields.io/npm/l/@b1/bee-cli.svg" alt="License"></a>
+  <a href="https://npmcharts.com/compare/bee-cli?minimal=true"><img src="https://img.shields.io/npm/dm/bee-cli.svg" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/bee-cli"><img src="https://img.shields.io/npm/v/bee-cli.svg" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/bee-cli"><img src="https://img.shields.io/npm/l/bee-cli.svg" alt="License"></a>
   <br>
 </p>
 
