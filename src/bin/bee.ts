@@ -5,12 +5,12 @@ import * as program from 'commander'
 import commands from '../index'
 import { log } from '../util'
 
-const minPkg = require('../../package.json')
+const beePkg = require('../../package.json')
 
 program
-  .version(minPkg.version)
+  .version(beePkg.version)
   .option('-v', '--version', () => {
-    console.log(minPkg.version)
+    console.log(beePkg.version)
   })
   .usage('<command> [options]')
 

@@ -14,7 +14,7 @@ export namespace UpdateCommand {
    */
   export interface Options {
     /**
-     * 包名列表，如：['@minui/wxc-loading'、'@minui/wxc-tab']
+     * 包名列表，如：['@b1/wxc-loading'、'@b1/wxc-tab']
      *
      * @type {string []}
      * @memberof Options

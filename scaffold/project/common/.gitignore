@@ -1,11 +1,8 @@
-dist/
-node_modules/
-web/style
-sftp-config.json
-log
-npm-debug.log
-.vscode
-coverage
-lerna-debug.log
+node_modules/*
+dist/*
+package-lock.json
 .DS_Store
+yarn-error.log
 .wepycache
+.vscode/
+.idea/

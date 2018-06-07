@@ -45,7 +45,7 @@ export default {
   name: 'commit',
   alias: 'ci',
   usage: '',
-  description: '提交 MinUI 组件库',
+  description: '提交 BeeUI 组件库',
   options: [],
   on: {
     '--help': () => {

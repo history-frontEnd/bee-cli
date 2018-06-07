@@ -1,4 +1,0 @@
-# <%= proName %>
-<% if (description) { %>
-> <%= description %>
-<% } %>

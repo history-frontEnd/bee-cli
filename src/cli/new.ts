@@ -147,7 +147,7 @@ export class NewCommand {
               break
 
             default:
-              return Promise.reject('Min New 失败：未知项目类型，无法继续创建')
+              return Promise.reject('Bee New 失败：未知项目类型，无法继续创建')
           }
         }
         break
@@ -160,7 +160,7 @@ export class NewCommand {
         break
 
       default:
-        return Promise.reject('Min New 失败：未知项目类型，无法继续创建')
+        return Promise.reject('Bee New 失败：未知项目类型，无法继续创建')
     }
   }
 
@@ -326,9 +326,9 @@ export class NewCommand {
    */
   private async buildPage (answers: NewAnswers) {
 
-    // 执行 min build 构建
+    // 执行 bee build 构建
     log.newline()
-    log.msg(LogType.RUN, '命令：wepy build')
+    log.msg(LogType.RUN, '命令：npm run build')
     log.msg(LogType.INFO, '编译中, 请耐心等待...')
 
     // let pages: string[] = []

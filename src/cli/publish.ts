@@ -14,7 +14,7 @@ export namespace PublishCommand {
    */
   export interface Options {
     /**
-     * 包名 或 组件名，如：@minui/wxc-loading 或 wxc-loading
+     * 包名 或 组件名
      *
      * @type {string}
      * @memberof Options
@@ -105,8 +105,6 @@ export default {
   async action (pkgName: string, cliOptions: PublishCommand.CLIOptions) {
     util.overrideNpmLog()
 
-    // loading => @minui/wxc-loading
-    // wxc-loading => @minui/wxc-loading
     pkgName = pkgName ? util.getRealPkgNameWithScope(pkgName) : ''
 
     // 获取 answers

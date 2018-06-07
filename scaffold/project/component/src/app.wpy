@@ -1,99 +1,62 @@
-<style lang="less">
-@import './style/weui.less';
-page{
-    background-color: #F8F8F8;
-    font-size: 16px;
-    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
-}
-.page__hd {
-    padding: 40px;
-}
-.page__bd {
-    padding-bottom: 40px;
-}
-.page__bd_spacing {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.page__ft{
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.page__title {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.page__desc {
-    margin-top: 5px;
-    color: #888888;
-    text-align: left;
-    font-size: 14px;
-}
-</style>
+<template>
+  <view>
+    <page></page>
+  </view>
+</template>
 
 <script>
-
-import wepy from 'wepy';
-import 'wepy-async-function';
+import wepy from 'wepy'
+import 'wepy-async-function'
+import 'promise-polyfill'
+import 'utils/injectObj'
 
 export default class extends wepy.app {
+  config = {
+    pages: [
+      'pages/home/index',
+      'pages/about/index',
+      'pages/toast/index'
 
-    config = {
-        'pages': [
-            'example/index',
-            'example/button',
-            'example/list',
-            'example/input',
-            'example/slider',
-            'example/uploader',
-
-            'example/article',
-            'example/badge',
-            'example/flex',
-            'example/footer',
-            'example/gallery',
-            'example/grid',
-            'example/icons',
-            'example/loadmore',
-            'example/panel',
-            'example/preview',
-            'example/progress',
-
-            'example/actionsheet',
-            'example/dialog',
-            'example/msg',
-            'example/msg_fail',
-            'example/msg_success',
-            'example/picker',
-            'example/toast',
-
-            'example/navbar',
-            'example/tabbar',
-
-            'example/searchbar'
-        ],
-        'window': {
-            'navigationBarTextStyle': 'black',
-            'navigationBarTitleText': 'BeeUi',
-            'navigationBarBackgroundColor': '#f8f8f8',
-            'backgroundColor': '#f8f8f8'
+    ],
+    window: {
+      backgroundTextStyle: 'dark',
+      backgroundColor: '#efefef',
+      navigationBarBackgroundColor: '#ffffff',
+      navigationBarTitleText: 'BeeUi组件库',
+      navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: '#8a8a8a',
+      selectedColor: '#28b1b0',
+      borderStyle: 'black',
+      backgroundColor: '#ffffff',
+      list: [
+        {
+          pagePath: 'pages/home/index',
+          // iconPath: 'images/tab/coms-normal.png',
+          // selectedIconPath: 'images/tab/coms-active.png',
+          text: '组件库'
         },
-        'networkTimeout': {
-            'request': 10000,
-            'connectSocket': 10000,
-            'uploadFile': 10000,
-            'downloadFile': 10000
+        {
+          pagePath: 'pages/about/index',
+          // iconPath: 'images/tab/about-normal.png',
+          // selectedIconPath: 'images/tab/about-active.png',
+          text: '说明'
         }
-    };
-
-    constructor () {
-        super();
-        this.use('promisify');
-        this.use('requestfix');
+      ]
+    },
+    networkTimeout: {
+      request: 10000
     }
+  }
+  globalData = {}
+  constructor () {
+    super()
+    this.use('requestfix')
+    this.use('promisify')
+  }
 }
 </script>
+<style lang="less">
+  @import 'common/assets/style/reset.less';
+</style>

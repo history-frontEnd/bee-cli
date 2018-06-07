@@ -95,7 +95,7 @@ export default {
   name: 'packages [name]',
   alias: 'pkgs',
   usage: '[name] [-l | --list] [-d | --delete]',
-  description: '管理 MinUI 组件库',
+  description: '管理 BeeUI 组件库',
   options: [
     ['-l, --list', '查看组件列表'],
     ['-d, --delete', '删除组件']

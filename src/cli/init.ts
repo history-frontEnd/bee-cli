@@ -137,7 +137,7 @@ export namespace InitCommand {
     npmScope?: string
 
     /**
-     * 带上 '@' 完整的 scope 名称，例如 @minui
+     * 带上 '@' 完整的 scope 名称，例如 @b1
      *
      * @type {string}
      * @memberof Options
@@ -205,7 +205,7 @@ export class InitCommand {
 
     await this.npmInstall()
 
-    await this.minBuild()
+    await this.beeDev()
 
     // 提示使用
     log.newline()
@@ -279,10 +279,10 @@ export class InitCommand {
       return
     }
 
-    // 执行 min new 创建
+    // 执行 bee new 创建
     log.newline()
     log.msg(LogType.INFO, '准备为您创建一个新的组件')
-    log.msg(LogType.RUN, '命令：min new')
+    log.msg(LogType.RUN, '命令：bee new')
     let newCommand = new NewCommand({
       newType: NewType.Package
     })
@@ -300,16 +300,27 @@ export class InitCommand {
     })
   }
 
-  private async minBuild () {
+  private async beeDev () {
     let { proPath } = this.options
     // 执行 min build 构建
     log.newline()
-    log.msg(LogType.RUN, '命令：min build')
+    log.msg(LogType.RUN, '命令：npm run dev')
     log.msg(LogType.INFO, '编译中, 请耐心等待...')
-    await exec('min', ['build'], true, {
+    await exec('npm', ['run', 'dev'], true, {
       cwd: proPath
     })
   }
+
+  // private async minBuild () {
+  //   let { proPath } = this.options
+  //   // 执行 min build 构建
+  //   log.newline()
+  //   log.msg(LogType.RUN, '命令：min build')
+  //   log.msg(LogType.INFO, '编译中, 请耐心等待...')
+  //   await exec('min', ['build'], true, {
+  //     cwd: proPath
+  //   })
+  // }
 }
 
 /**
@@ -500,59 +511,63 @@ function getOptions (proName: string): Promise<InitCommand.Options> {
       when (answers: any) {
         return !!answers.isContinue
       }
-    }, {
-      type: 'confirm',
-      message: '是否使用全局模板',
-      name: 'useGlobalLayout',
-      default: true,
-      when (answers: any) {
-        return !!answers.isContinue && answers.projectType === ProjectType.Application
-      }
-    }, {
-      type: 'input',
-      message: '请设置项目编译后的保存路径',
-      name: 'dest',
-      default: defaultConfig.dest,
-      filter (input: string) {
-        return input.trim()
-      },
-      validate (input: string, answers: any) {
-        if (input === '') {
-          return '请输入路径'
-        }
-        return true
-      },
-      when (answers: any) {
-        return !!answers.isContinue
-      }
-    }, {
-      type: 'input',
-      message: '请设置NPM模块编译后的保存路径，相对于 “项目编译” 后的保存路径',
-      name: 'npmDest',
-      default (answers: any) {
-        // dist/packages => packages
-        return defaultConfig.npm.dest.replace(`${defaultConfig.dest}/`, '')
-      },
-      filter (input: string) {
-        input = input.trim()
-        if (input !== '') {
-          // 由于 @types/inquirer v0.0.35 版本未提供 filter 函数第二个answers入参，但 inquirer 包已支持，因此在这里通过 arguments 得到入参集合
-          let answers = arguments[1] || {}
-          // dist + packages => dist/packages
-          return `${answers.dest}/${input}`
-        }
-        return input
-      },
-      validate (input: string, answers: any) {
-        if (input === '') {
-          return '请输入路径'
-        }
-        return true
-      },
-      when (answers: any) {
-        return !!answers.isContinue && answers.projectType === ProjectType.Component
-      }
-    }, {
+    },
+    // {
+    //   type: 'confirm',
+    //   message: '是否使用全局模板',
+    //   name: 'useGlobalLayout',
+    //   default: false,
+    //   when (answers: any) {
+    //     return !!answers.isContinue && answers.projectType === ProjectType.Application
+    //   }
+    // },
+    // {
+    //   type: 'input',
+    //   message: '请设置项目编译后的保存路径',
+    //   name: 'dest',
+    //   default: defaultConfig.dest,
+    //   filter (input: string) {
+    //     return input.trim()
+    //   },
+    //   validate (input: string, answers: any) {
+    //     if (input === '') {
+    //       return '请输入路径'
+    //     }
+    //     return true
+    //   },
+    //   when (answers: any) {
+    //     return !!answers.isContinue
+    //   }
+    // },
+    // {
+    //   type: 'input',
+    //   message: '请设置NPM模块编译后的保存路径，相对于 “项目编译” 后的保存路径',
+    //   name: 'npmDest',
+    //   default (answers: any) {
+    //     // dist/packages => packages
+    //     return defaultConfig.npm.dest.replace(`${defaultConfig.dest}/`, '')
+    //   },
+    //   filter (input: string) {
+    //     input = input.trim()
+    //     if (input !== '') {
+    //       // 由于 @types/inquirer v0.0.35 版本未提供 filter 函数第二个answers入参，但 inquirer 包已支持，因此在这里通过 arguments 得到入参集合
+    //       let answers = arguments[1] || {}
+    //       // dist + packages => dist/packages
+    //       return `${answers.dest}/${input}`
+    //     }
+    //     return input
+    //   },
+    //   validate (input: string, answers: any) {
+    //     if (input === '') {
+    //       return '请输入路径'
+    //     }
+    //     return true
+    //   },
+    //   when (answers: any) {
+    //     return !!answers.isContinue && answers.projectType === ProjectType.Component
+    //   }
+    // },
+    {
       type: 'input',
       message: '请设置NPM模块的scope名称',
       name: 'npmScope',
