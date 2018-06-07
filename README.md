@@ -58,7 +58,6 @@ $ bee new *name
 #? 请设置新组件的英文名称 test-xx
 #? 请设置新组件的中文标题 xx
 ```
-
 1. 该命令会在src/packages生成组件的npm库，同时生成指定模板的样例页面
 2. 修改组件首页中的config.js
 3. 组件开发时，注意在app.wpy中加入相应的页面
@@ -73,6 +72,22 @@ $ npm run dev
 
 ``` bash
 $ bee publish
+
+# example
+#$ bee publish
+#? 请选择发布方式 发布项目里的每个组件
+#info Checking for updated packages...
+#info Comparing with @b1/bee-code-input@1.0.4.
+#info Checking for prereleased packages...
+#? Select a new version for @b1/bee-code-input (currently 1.0.4) (Use arrow keys)
+#❯ Patch (1.0.5)
+#  Minor (1.1.0)
+#  Major (2.0.0)
+#  Prepatch (1.0.5-0)
+#  Preminor (1.1.0-0)
+#  Premajor (2.0.0-0)
+#  Prerelease
+#  Custom
 ```
 1. 把该组件库commit到一个远程仓库中。
 2. 如果检测不到你的组件更新，使用git add 把新组件加入到索引中
