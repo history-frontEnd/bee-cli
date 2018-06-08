@@ -13,7 +13,7 @@
 
 1. Clone <%= proName %> 仓库到本地；
 2. 安装依赖 `$ npm install`;
-3. 在 <%= proName %> 根目录下执行 `$ wepy dev`，生成 dist/ 目录；
+3. 在 <%= proName %> 根目录下执行 `$ npm run dev`，生成 dist/ 目录；
 4. 微信开发者工具 —— 新建一个小程序，目录指向生成的 dist/；
 
 ### ◆ 全局inject
