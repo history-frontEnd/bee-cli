@@ -2,11 +2,11 @@
   "name": "<%= npmScopeStr %><%= pkgName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
-  "main": "./src/index.wpy",
+  "main": "index.wpy",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/meili/minui/tree/master/packages/<%= pkgName %>"
+    "url": "https://github.com/biosan-frontEnd/BeeUi/tree/master/src/packages/<%= pkgName %>"
   },
   "author": "",
   "license": "MIT",
