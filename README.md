@@ -1,5 +1,3 @@
-[![NPM Download](https://nodei.co/npm-dl/@b1/bee-cli.png?months=1)](http://badge.fury.io/js/@b1/bee-cli)
-
 <p align="left">
   <a href="https://www.npmjs.com/package/@b1/bee-cli"><img src="https://img.shields.io/npm/v/@b1/bee-cli.svg" alt="Version"></a>
   <a href="https://www.npmjs.com/package/@b1/bee-cli"><img src="https://img.shields.io/npm/dt/@b1/bee-cli.svg?style=flat-square" alt="Downloads"></a>
