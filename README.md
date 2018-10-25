@@ -5,7 +5,7 @@
   <br>
 </p>
 
-# Bee Cli - wepy小程序组件化解决方案
+# Bee Cli - 组件化解决方案
 
 Bee Cli是[min-cli](https://github.com/meili/min-cli)在[wepy](https://github.com/Tencent/wepy)上的实现。
 
